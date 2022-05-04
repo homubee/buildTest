@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "server": "cd server && nodemon server.js",
     "front": "cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run front\""
